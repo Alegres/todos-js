@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "title": "Drink water!",
+      "checked": true,
+      "id": 1
+    },
+    {
+      "title": "Eat fish!",
+      "checked": true,
+      "id": 2
+    },
+    {
+      "title": "Do some cool JS stuff",
+      "checked": false,
+      "id": 3
+    },
+    {
+      "title": "Do not hesitate!",
+      "checked": true,
+      "id": 4
+    },
+    {
+      "title": "Freely Remove",
+      "checked": false,
+      "id": 5
+    }
+  ]
+}
