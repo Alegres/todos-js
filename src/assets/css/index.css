@@ -1,0 +1,23 @@
+body {
+    --nav-width: 300px;
+    margin: 0 0 0 var(--nav-width);;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    background: black;
+}
+
+.nav__link {
+    display: block;
+    padding: 10px 18px;
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+}
