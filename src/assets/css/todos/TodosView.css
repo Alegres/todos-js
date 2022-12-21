@@ -1,21 +1,11 @@
-.my-div {
-  width: 100px;
-  height: 100px;
-  float: left;
+.todos-list {
+  list-style: none;
 }
 
-.my-div__header {
-  color: white;
-}
-
-.my-div__description {
+.todos-list__item {
   color: pink;
 }
 
-.yellow-div {
-  background: #bfeb22;
-}
-
-.black-div {
-  background: black;
+.todos-list__item__checkbox:hover {
+  cursor: pointer;
 }
