@@ -1,19 +1,19 @@
 export class AbstractView {
-    constructor(){
+    constructor() {
 
     }
 
-    async loadModel(){
+    async loadModel() {
 
 
     }
 
-     getHtml() {
+    getHTML() {
         return "";
     }
 
-    renderContent(){
-        
+    renderContent() {
+
     }
 
 }

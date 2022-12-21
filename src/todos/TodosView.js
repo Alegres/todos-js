@@ -16,7 +16,10 @@ export class TodosView extends AbstractView {
 
   getHTML() {
     return `
-          <div>
+          <div class="my-div">
+              <div class="my-second-div">
+                <input type="text" class="test-input"></input>
+              </div>
               <h1>TODO</h1>
               <div id="todos"></div>
           </div>

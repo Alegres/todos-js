@@ -1,0 +1,21 @@
+.my-div {
+    width: 100px;
+    height: 100px;
+    float: left;
+
+    &__header {
+        color: white;
+    }
+
+    &__description {
+        color: pink;
+    }
+}
+
+.yellow-div {
+    background: rgb(191, 235, 34);
+}
+
+.black-div {
+    background: black;
+}

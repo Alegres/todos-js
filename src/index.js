@@ -1,5 +1,10 @@
 import { getRoutes } from "./routes";
 
+const navigateTo = (url) => {
+    history.pushState(null, null, url);
+    route();
+}
+
 export async function route() {
     const routes = getRoutes();
 
@@ -12,8 +17,6 @@ export async function route() {
 
     let matchedRoute = routesMatching.find(route => route.isMatching === true);
 
-    console.log(matchedRoute);
-
     if (!matchedRoute) {
         matchedRoute = {
             route: routes[0],
@@ -25,6 +28,17 @@ export async function route() {
     document.querySelector("#app").innerHTML = view.getHTML();
     await view.loadModel();
     view.renderContent();
-
 }
-route();
+
+window.addEventListener("popstate", route);
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.addEventListener("click", (e) => {
+        if(e.target.matches("[data-link]")) {
+            e.preventDefault();
+            navigateTo(e.target.href);
+        }
+    });
+
+    route();
+})

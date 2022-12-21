@@ -7,51 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Todos</title>
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/todos/TodosView.css">
 </head>
 
 <body>
 
     <nav class="nav">
         <a href="/" class="nav__link" data-link>Dashboard</a>
-        <a href="/todo" class="nav__link" data-link>TODO</a>
-        <a href="/settings" class="nav__link" data-link>Settings</a>
+        <a href="/todos" class="nav__link" data-link>TODOs</a>
     </nav>
 
     <div id="app"></div>
 
-    <div class="wrapper">
-        <div class="titles">
-            <h1>TODO'S</h1>
-            <h5>You are viewing TODO's here!</h5>
-            <h5>Sorting by name</h5>
-            <input type="text" class="search" placeholder="Ascending: ">
-        </div>
-        <div class="lista-todos">
-            <h6>Lista bierzących TODOsów</h6>
-
-            <ul class="zadania">
-                <li id="zadanie">
-                    zadanie 1
-                    <div class="tools">
-                        <button class="complete"><i class="fas fa-check"></i>></button>
-                        <button>edit</button>
-                        <button><i class="fas fa-times"></i>></button>
-                    </div>
-
-                </li>
-            </ul>
-
-            <div id="db.json"></div>
-
-            <script src="db.json" type="text">
-                    document.getElementById("db.json").innerHTML = listaTodos; 
-                  </script>
-
-        </div>
-
-        <input type="text" class="search2:" placeholder="Your TODO: ">
-        <button>Submit TODO</button>
-    </div>
     <script type="module" src="index.js"></script>
 </body>
 
